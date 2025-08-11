@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Contact A.O">
+  <title>Contact | A.O</title>
+  <link rel="stylesheet" href="style.css"/>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="Contact A.O | Creative Technologist">
+  <meta property="og:description" content="Get in touch with A.O for collaborations or inquiries.">
+  <meta property="og:image" content="https://yourwebsite.com/images/og-contact.jpg">
+  <meta property="og:url" content="https://yourwebsite.com/contact.html">
+  <meta property="og:type" content="website">
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <nav>
+      <h1><a href="index.html">A.O</a></h1>
+      <button class="mobile-menu-toggle" aria-label="Toggle navigation menu">☰</button>
+      <ul class="nav-links">
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="contact-section">
+      <h2>Get In Touch</h2>
+      <p>Have a project in mind or just want to say hello? Let’s connect!</p>
+
+      <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="contact-form">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="_replyto" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+
+      <div class="social-links-contact">
+        <h3>Connect with me:</h3>
+      <a href="https://twitter.com/planetolu" target="_blank" aria-label="Twitter"><img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="Twitter" width="30" height="30"></a>
+      <a href="https://linkedin.com/in/" target="_blank" aria-label="LinkedIn"><img src="https://cdn-icons-png.flaticon.com/512/733/733561.png" alt="LinkedIn" width="30" height="30"></a>
+      <a href="https://github.com/planetolu" target="_blank" aria-label="GitHub"><img src="https://cdn-icons-png.flaticon.com/512/733/733553.png" alt="GitHub" width="30" height="30"></a>
+      </div>
+
+      <div class="location-map">
+        <h3>My Location </h3>
+        <p>Based in Lagos, Nigeria</p>
+        <!-- Replace with your actual Google Maps embed code -->
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.7370000000003!2d3.379205!3d6.524379!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b8b2ae68280c1%3A0x103b8b2ae68280c1!2sLagos%2C%20Nigeria!5e0!3m2!1sen!2sus!4v1678901234567!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 A.O | All rights reserved</p>
+    <div class="social-links-footer">
+      <a href="https://twitter.com/planetolu" target="_blank" aria-label="Twitter"><img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="Twitter" width="30" height="30"></a>
+      <a href="https://linkedin.com/in/" target="_blank" aria-label="LinkedIn"><img src="https://cdn-icons-png.flaticon.com/512/733/733561.png" alt="LinkedIn" width="30" height="30"></a>
+      <a href="https://github.com/planetolu" target="_blank" aria-label="GitHub"><img src="https://cdn-icons-png.flaticon.com/512/733/733553.png" alt="GitHub" width="30" height="30"></a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
