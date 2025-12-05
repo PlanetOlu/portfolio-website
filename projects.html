@@ -3,13 +3,15 @@
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <meta name="description" content="Projects Portfolio - A.O">
-  <title>Projects | A.O</title>
+  <meta name="description" content="Projects Portfolio - Abimbola Oluwamodupe">
+  <title>Projects | Planetolu - Martech Solutions Architect & Marketing Developer</title>
   <link rel="stylesheet" href="style.css"/>
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <!-- Font Awesome for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <!-- Open Graph Meta Tags -->
-  <meta property="og:title" content="A.O | Projects Portfolio">
+  <meta property="og:title" content="Planetolu | Projects Portfolio">
   <meta property="og:description" content="Explore my work in front-end development, graphic design, technical writing, and more.">
   <meta property="og:image" content="https://yourwebsite.com/images/og-projects.jpg">
   <meta property="og:url" content="https://yourwebsite.com/projects.html">
@@ -20,7 +22,7 @@
   <!-- Header -->
   <header>
     <nav>
-      <h1><a href="index.html">A.O</a></h1>
+      <h1><a href="index.html">Planetolu</a></h1>
       <button class="mobile-menu-toggle" aria-label="Toggle navigation menu">☰</button>
       <ul class="nav-links">
         <li><a href="about.html">About</a></li>
@@ -32,160 +34,384 @@
 
   <main>
     <section class="projects-section">
-      <h2>My Projects</h2>
+      <div class="projects-header">
+        <h2>My Projects</h2>
+        <p class="projects-subtitle">A showcase of my technical work, creative designs, and writing projects.</p>
+      </div>
+      
       <div class="project-filters">
-        <button data-filter="all" class="active">All</button>
-        <button data-filter="frontend">Front-End</button>
-        <button data-filter="graphic">Graphic Design</button>
-        <button data-filter="technical">Technical Writing</button>
-        <button data-filter="copywriting">Copywriting</button>
-        <button data-filter="presentations">Presentations</button>
+        <button data-filter="all" class="filter-btn active">
+          <i class="fas fa-th"></i> All Projects
+        </button>
+        <button data-filter="frontend" class="filter-btn">
+          <i class="fas fa-code"></i> Front-End
+        </button>
+        <button data-filter="graphic" class="filter-btn">
+          <i class="fas fa-paint-brush"></i> Graphic Design
+        </button>
+        <button data-filter="technical" class="filter-btn">
+          <i class="fas fa-file-alt"></i> Technical Writing
+        </button>
+        <button data-filter="copywriting" class="filter-btn">
+          <i class="fas fa-pen"></i> Copywriting
+        </button>
+        <button data-filter="presentations" class="filter-btn">
+          <i class="fas fa-presentation"></i> Presentations
+        </button>
       </div>
 
       <div class="project-grid">
-        <!-- Front-End Project Card 1: SyncSales CRM Landing Page -->
+        
+        <!-- Front-End Projects -->
         <div class="project-card frontend" data-category="frontend">
-          <h3>SyncSales CRM Landing Page</h3>
-          <p class="project-meta">2025 | HTML, CSS, JS</p>
-          <p>A clean and intuitive landing page for SyncSales CRM, focusing on key features and benefits (spec work).</p>
-          <a href="https://planetolu.github.io/syncsales/" target="_blank" class="btn-small">View Live</a>
+          <div class="project-card-header">
+            <span class="project-category">Front-End Development</span>
+            <div class="project-tech">
+              <span class="tech-tag">HTML</span>
+              <span class="tech-tag">CSS</span>
+              <span class="tech-tag">JavaScript</span>
+            </div>
+          </div>
+          <div class="project-card-content">
+            <h3>SyncSales CRM Landing Page</h3>
+            <p class="project-meta">2025 • Responsive Web Design</p>
+            <p class="project-description">A clean, modern landing page for a CRM SaaS platform, featuring responsive design, smooth animations, and conversion-focused layout.</p>
+            <div class="project-features">
+              <span><i class="fas fa-check"></i> Fully Responsive</span>
+              <span><i class="fas fa-check"></i> Mobile-First</span>
+              <span><i class="fas fa-check"></i> SEO Optimized</span>
+            </div>
+          </div>
+          <div class="project-card-footer">
+            <a href="https://planetolu.github.io/syncsales/" target="_blank" class="project-btn">
+              <i class="fas fa-external-link-alt"></i> View Live
+            </a>
+            <a href="#" class="project-btn secondary">
+              <i class="fab fa-github"></i> Code
+            </a>
+          </div>
         </div>
 
-        <!-- Front-End Project Card 2: Grino Real Estate Landing Page -->
         <div class="project-card frontend" data-category="frontend">
-          <h3>Grino Real Estate Landing Page</h3>
-          <p class="project-meta">2025 | HTML, CSS, JS</p>
-          <p>Modern and responsive landing page for Grino, a short-let real estate platform.</p>
-          <a href="https://planetolu.github.io/Grino/" target="_blank" class="btn-small">View Live</a>
+          <div class="project-card-header">
+            <span class="project-category">Front-End Development</span>
+            <div class="project-tech">
+              <span class="tech-tag">HTML</span>
+              <span class="tech-tag">CSS</span>
+              <span class="tech-tag">JavaScript</span>
+            </div>
+          </div>
+          <div class="project-card-content">
+            <h3>Grino Real Estate Platform</h3>
+            <p class="project-meta">2025 • Property Listings</p>
+            <p class="project-description">Modern real estate website with property filtering, image galleries, and interactive maps for a short-let accommodation platform.</p>
+            <div class="project-features">
+              <span><i class="fas fa-check"></i> Property Filtering</span>
+              <span><i class="fas fa-check"></i> Image Gallery</span>
+              <span><i class="fas fa-check"></i> Interactive Map</span>
+            </div>
+          </div>
+          <div class="project-card-footer">
+            <a href="https://planetolu.github.io/Grino/" target="_blank" class="project-btn">
+              <i class="fas fa-external-link-alt"></i> View Live
+            </a>
+            <a href="#" class="project-btn secondary">
+              <i class="fab fa-github"></i> Code
+            </a>
+          </div>
         </div>
 
-        <!-- Front-End Project Card 3: Personal Portfolio Website -->
-        <div class="project-card frontend" data-category="frontend">
-          <h3>Personal Portfolio Website</h3>
-          <p class="project-meta">2025 | HTML, CSS, JS</p>
-          <p>The very website you're viewing, showcasing my diverse skill set and projects.</p>
-          <a href="index.html" target="_blank" class="btn-small">View Live</a>
-        </div>
-
-        <!-- Graphic Design Project Card - Based on productlaunch.pdf -->
+        <!-- Graphic Design Projects -->
         <div class="project-card graphic" data-category="graphic">
-          <h3>Lunaya Product Launch Visuals</h3>
-          <p class="project-meta">2025 | Design, Branding</p>
-          <p>Visual assets for a stellar skin product launch, featuring cosmic steps and product highlights (spec work).</p>
-          <a href="./files/graphic-design/productlaunch.pdf" target="_blank" class="btn-small">View PDF</a>
+          <div class="project-card-header">
+            <span class="project-category">Graphic Design</span>
+            <div class="project-tech">
+              <span class="tech-tag">Figma</span>
+              <span class="tech-tag">Photoshop</span>
+            </div>
+          </div>
+          <div class="project-card-content">
+            <h3>Lunaya Skin Product Launch</h3>
+            <p class="project-meta">2025 • Brand Identity</p>
+            <p class="project-description">Complete visual identity and launch campaign for a skincare brand, including packaging, social media assets, and promotional materials.</p>
+            <div class="project-features">
+              <span><i class="fas fa-check"></i> Brand Guidelines</span>
+              <span><i class="fas fa-check"></i> Packaging Design</span>
+              <span><i class="fas fa-check"></i> Social Media Kit</span>
+            </div>
+          </div>
+          <div class="project-card-footer">
+            <a href="./files/graphic-design/productlaunch.pdf" target="_blank" class="project-btn">
+              <i class="fas fa-eye"></i> View Project
+            </a>
+            <a href="#" class="project-btn secondary">
+              <i class="fas fa-download"></i> PDF
+            </a>
+          </div>
         </div>
 
-        <!-- Graphic Design Project Card - Based on Juice Drink Menu.pdf -->
         <div class="project-card graphic" data-category="graphic">
-          <h3>Jui City Drink Menu Design</h3>
-          <p class="project-meta">2025 | Graphic Design, Layout</p>
-          <p>A vibrant and clear menu design for Jui City natural juices, highlighting flavors and best sellers.</p>
-          <a href="./files/graphic-design/Juice Drink Menu.pdf" target="_blank" class="btn-small">View PDF</a>
+          <div class="project-card-header">
+            <span class="project-category">Graphic Design</span>
+            <div class="project-tech">
+              <span class="tech-tag">Illustrator</span>
+              <span class="tech-tag">Canva</span>
+            </div>
+          </div>
+          <div class="project-card-content">
+            <h3>Jui City Drink Menu</h3>
+            <p class="project-meta">2025 • Menu Design</p>
+            <p class="project-description">Vibrant and clear menu design for a natural juice bar, featuring flavor profiles, best sellers, and nutritional information.</p>
+            <div class="project-features">
+              <span><i class="fas fa-check"></i> Print-Ready</span>
+              <span><i class="fas fa-check"></i> Color Psychology</span>
+              <span><i class="fas fa-check"></i> Typography</span>
+            </div>
+          </div>
+          <div class="project-card-footer">
+            <a href="./files/graphic-design/Juice Drink Menu.pdf" target="_blank" class="project-btn">
+              <i class="fas fa-eye"></i> View Menu
+            </a>
+            <a href="#" class="project-btn secondary">
+              <i class="fas fa-print"></i> Print Version
+            </a>
+          </div>
         </div>
 
-        <!-- Graphic Design Project Card - Based on comic.pdf (Identify, Describe, Document) -->
-        <div class="project-card graphic" data-category="graphic">
-          <h3>Art Project Guide Comic</h3>
-          <p class="project-meta">2025 | Educational, Visual Storytelling</p>
-          <p>A comic-style guide on how to identify, describe, and visually document artwork for an art project.</p>
-          <a href="./files/graphic-design/comic.pdf" target="_blank" class="btn-small">View PDF</a>
-        </div>
-
-        <!-- Graphic Design Project Card - Based on Work From Home .pdf (Time Management) -->
-        <div class="project-card graphic" data-category="graphic">
-          <h3>WFH Time Management Hacks</h3>
-          <p class="project-meta">2025 | Productivity, Remote Work</p>
-          <p>Practical tips and strategies for remote workers to maximize productivity and manage time effectively.</p>
-          <a href="./files/graphic-design/Work From Home .pdf" target="_blank" class="btn-small">View PDF</a>
-        </div>
-
-        <!-- Technical Writing Project Card - Based on tw1.pdf (Web3) -->
+        <!-- Technical Writing Projects -->
         <div class="project-card technical" data-category="technical">
-          <h3>Web3 Fundamentals Guide</h3>
-          <p class="project-meta">2025 | Blockchain, Web Development</p>
-          <p>An in-depth guide explaining the evolution and core concepts of Web3, from Web 1.0 to ownership.</p>
-          <a href="./files/technical-writing/tw1.pdf" target="_blank" class="btn-small">View PDF</a>
+          <div class="project-card-header">
+            <span class="project-category">Technical Writing</span>
+            <div class="project-tech">
+              <span class="tech-tag">Blockchain</span>
+              <span class="tech-tag">Web3</span>
+            </div>
+          </div>
+          <div class="project-card-content">
+            <h3>Web3 Fundamentals Guide</h3>
+            <p class="project-meta">2025 • Educational Content</p>
+            <p class="project-description">Comprehensive guide explaining Web3 concepts from Web 1.0 to blockchain, NFTs, and decentralized applications for beginners.</p>
+            <div class="project-features">
+              <span><i class="fas fa-check"></i> Beginner-Friendly</span>
+              <span><i class="fas fa-check"></i> Visual Examples</span>
+              <span><i class="fas fa-check"></i> Case Studies</span>
+            </div>
+          </div>
+          <div class="project-card-footer">
+            <a href="./files/technical-writing/tw1.pdf" target="_blank" class="project-btn">
+              <i class="fas fa-book-open"></i> Read Guide
+            </a>
+            <a href="#" class="project-btn secondary">
+              <i class="fas fa-share-alt"></i> Share
+            </a>
+          </div>
         </div>
 
-        <!-- Technical Writing Project Card - Based on tw2.pdf (Smart Contracts) -->
         <div class="project-card technical" data-category="technical">
-          <h3>Smart Contracts: The Future</h3>
-          <p class="project-meta">2025 | Blockchain, Automation</p>
-          <p>Exploring the impact and real-world use cases of automated transactions and their challenges.</p>
-          <a href="./files/technical-writing/tw2.pdf" target="_blank" class="btn-small">View PDF</a>
+          <div class="project-card-header">
+            <span class="project-category">Technical Writing</span>
+            <div class="project-tech">
+              <span class="tech-tag">Smart Contracts</span>
+              <span class="tech-tag">Automation</span>
+            </div>
+          </div>
+          <div class="project-card-content">
+            <h3>Smart Contracts Explained</h3>
+            <p class="project-meta">2025 • Blockchain Technology</p>
+            <p class="project-description">Deep dive into smart contracts: how they work, real-world applications, security considerations, and future implications.</p>
+            <div class="project-features">
+              <span><i class="fas fa-check"></i> Real Examples</span>
+              <span><i class="fas fa-check"></i> Security Focus</span>
+              <span><i class="fas fa-check"></i> Future Trends</span>
+            </div>
+          </div>
+          <div class="project-card-footer">
+            <a href="./files/technical-writing/tw2.pdf" target="_blank" class="project-btn">
+              <i class="fas fa-book-open"></i> Read Article
+            </a>
+            <a href="#" class="project-btn secondary">
+              <i class="fas fa-file-pdf"></i> Download
+            </a>
+          </div>
         </div>
 
-        <!-- Technical Writing Project Card - Based on tw3.pdf (NFTs) -->
-        <div class="project-card technical" data-category="technical">
-          <h3>NFTs: Digital Revolution of Ownership</h3>
-          <p class="project-meta">2025 | Digital Assets, Blockchain</p>
-          <p>A comprehensive look into Non-Fungible Tokens, their applications, and future trends.</p>
-          <a href="./files/technical-writing/tw3.pdf" target="_blank" class="btn-small">View PDF</a>
-        </div>
-
-        <!-- Copywriting Project Card - Based on bcnl.pdf (Camp Chronicles) -->
+        <!-- Copywriting Projects -->
         <div class="project-card copywriting" data-category="copywriting">
-          <h3>Camp Chronicles Newsletter</h3>
-          <p class="project-meta">2025 | Newsletter, Event Promotion</p>
-          <p>Engaging newsletter content for Borabora Camp, highlighting activities and upcoming events.</p>
-          <a href="./files/copywriting/bcnl.pdf" target="_blank" class="btn-small">View PDF</a>
+          <div class="project-card-header">
+            <span class="project-category">Copywriting</span>
+            <div class="project-tech">
+              <span class="tech-tag">Newsletter</span>
+              <span class="tech-tag">Email</span>
+            </div>
+          </div>
+          <div class="project-card-content">
+            <h3>Camp Chronicles Newsletter</h3>
+            <p class="project-meta">2025 • Email Marketing</p>
+            <p class="project-description">Monthly newsletter for Borabora Camp featuring event highlights, upcoming activities, and community engagement content.</p>
+            <div class="project-features">
+              <span><i class="fas fa-check"></i> High Open Rate</span>
+              <span><i class="fas fa-check"></i> Engagement Focused</span>
+              <span><i class="fas fa-check"></i> Brand Voice</span>
+            </div>
+          </div>
+          <div class="project-card-footer">
+            <a href="./files/copywriting/bcnl.pdf" target="_blank" class="project-btn">
+              <i class="fas fa-envelope-open-text"></i> View Newsletter
+            </a>
+            <a href="#" class="project-btn secondary">
+              <i class="fas fa-chart-line"></i> Analytics
+            </a>
+          </div>
         </div>
 
-        <!-- Copywriting Project Card - Based on ssnl.pdf (SyncSales CRM) -->
         <div class="project-card copywriting" data-category="copywriting">
-          <h3>SyncSales CRM Monthly Newsletter</h3>
-          <p class="project-meta">2025 | CRM, Marketing</p>
-          <p>Monthly newsletter showcasing features and benefits of SyncSales CRM, including Timeline View and Sync Points.</p>
-          <a href="./files/copywriting/ssnl.pdf" target="_blank" class="btn-small">View PDF</a>
+          <div class="project-card-header">
+            <span class="project-category">Copywriting</span>
+            <div class="project-tech">
+              <span class="tech-tag">CRM</span>
+              <span class="tech-tag">Marketing</span>
+            </div>
+          </div>
+          <div class="project-card-content">
+            <h3>SyncSales CRM Newsletter</h3>
+            <p class="project-meta">2025 • B2B Marketing</p>
+            <p class="project-description">Monthly newsletter showcasing CRM features, customer success stories, and product updates for SyncSales platform.</p>
+            <div class="project-features">
+              <span><i class="fas fa-check"></i> Lead Generation</span>
+              <span><i class="fas fa-check"></i> Customer Retention</span>
+              <span><i class="fas fa-check"></i> Conversion Focused</span>
+            </div>
+          </div>
+          <div class="project-card-footer">
+            <a href="./files/copywriting/ssnl.pdf" target="_blank" class="project-btn">
+              <i class="fas fa-envelope-open-text"></i> View Newsletter
+            </a>
+            <a href="#" class="project-btn secondary">
+              <i class="fas fa-users"></i> Subscribers
+            </a>
+          </div>
         </div>
 
-        <!-- Copywriting Project Card - Based on wsnl.pdf (Walter & Spicy) -->
-        <div class="project-card copywriting" data-category="copywriting">
-          <h3>Walter & Spicy April Newsletter</h3>
-          <p class="project-meta">2025 | Digital Art, Studio Updates</p>
-          <p>Monthly update from a digital art & photo studio, featuring team news, event highlights, and promotions.</p>
-          <a href="./files/copywriting/wsnl.pdf" target="_blank" class="btn-small">View PDF</a>
-        </div>
-
-        <!-- Presentations Project Card 1 - Healthy Work Environment -->
+        <!-- Presentations -->
         <div class="project-card presentations" data-category="presentations">
-          <h3>Healthy Work Environment</h3>
-          <p class="project-meta">2025 | PowerPoint, Corporate</p>
-          <p>An informative presentation promoting a healthy and productive workplace environment.</p>
-          <a href="./files/presentations/Healthy Work Environment ppt.pptx" target="_blank" class="btn-small">Download PPTX</a>
+          <div class="project-card-header">
+            <span class="project-category">Presentations</span>
+            <div class="project-tech">
+              <span class="tech-tag">PowerPoint</span>
+              <span class="tech-tag">Design</span>
+            </div>
+          </div>
+          <div class="project-card-content">
+            <h3>Healthy Work Environment</h3>
+            <p class="project-meta">2025 • Corporate Training</p>
+            <p class="project-description">Professional presentation on creating and maintaining a healthy, productive workplace environment with actionable strategies.</p>
+            <div class="project-features">
+              <span><i class="fas fa-check"></i> Corporate Ready</span>
+              <span><i class="fas fa-check"></i> Data Visualized</span>
+              <span><i class="fas fa-check"></i> Actionable Tips</span>
+            </div>
+          </div>
+          <div class="project-card-footer">
+            <a href="./files/presentations/Healthy Work Environment ppt.pptx" target="_blank" class="project-btn">
+              <i class="fas fa-file-powerpoint"></i> View PPT
+            </a>
+            <a href="#" class="project-btn secondary">
+              <i class="fas fa-download"></i> Download
+            </a>
+          </div>
         </div>
 
-        <!-- Presentations Project Card 2 - Mental Health Awareness -->
-        <div class="project-card presentations" data-category="presentations">
-          <h3>Mental Health Awareness</h3>
-          <p class="project-meta">2025 | PowerPoint, Awareness</p>
-          <p>A visually engaging presentation for raising awareness and understanding about mental health.</p>
-          <a href="./files/presentations/Mental Health Awareness Presentation.pptx" target="_blank" class="btn-small">Download PPTX</a>
+        <!-- Upcoming Projects -->
+        <div class="project-card upcoming" data-category="all">
+          <div class="project-card-header">
+            <span class="project-category upcoming-tag">Coming Soon</span>
+            <div class="project-tech">
+              <span class="tech-tag">Fullstack</span>
+              <span class="tech-tag">MarTech</span>
+            </div>
+          </div>
+          <div class="project-card-content">
+            <h3>Fullstack CRM Dashboard</h3>
+            <p class="project-meta">In Progress • Node.js + React</p>
+            <p class="project-description">Building a complete CRM dashboard with user management, analytics, and email automation features.</p>
+            <div class="project-features">
+              <span><i class="fas fa-clock"></i> In Development</span>
+              <span><i class="fas fa-code"></i> Node.js Backend</span>
+              <span><i class="fas fa-database"></i> MongoDB</span>
+            </div>
+          </div>
+          <div class="project-card-footer">
+            <a href="#" class="project-btn disabled">
+              <i class="fas fa-lock"></i> Coming Soon
+            </a>
+          </div>
         </div>
 
-        <!-- Presentations Project Card 3 - Promotion Celebration -->
-        <div class="project-card presentations" data-category="presentations">
-          <h3>Promotion Celebration</h3>
-          <p class="project-meta">2025 | PowerPoint, Event</p>
-          <p>An engaging presentation designed for celebrating a professional promotion or achievement.</p>
-          <a href="./files/presentations/Promotion Celebration Presentation.pptx" target="_blank" class="btn-small">Download PPTX</a>
+        <div class="project-card upcoming" data-category="all">
+          <div class="project-card-header">
+            <span class="project-category upcoming-tag">Coming Soon</span>
+            <div class="project-tech">
+              <span class="tech-tag">Analytics</span>
+              <span class="tech-tag">GA4</span>
+            </div>
+          </div>
+          <div class="project-card-content">
+            <h3>Marketing Analytics Dashboard</h3>
+            <p class="project-meta">In Progress • Data Visualization</p>
+            <p class="project-description">Real-time dashboard for tracking marketing campaigns, user behavior, and conversion metrics.</p>
+            <div class="project-features">
+              <span><i class="fas fa-clock"></i> In Development</span>
+              <span><i class="fas fa-chart-bar"></i> Real-time Data</span>
+              <span><i class="fas fa-filter"></i> Custom Filters</span>
+            </div>
+          </div>
+          <div class="project-card-footer">
+            <a href="#" class="project-btn disabled">
+              <i class="fas fa-lock"></i> Coming Soon
+            </a>
+          </div>
         </div>
 
       </div>
     </section>
   </main>
 
+  <!-- Floating AI Assistant -->
+  <div class="ai-assistant">
+    <div class="ai-avatar">
+      <div class="ai-face">
+        <div class="ai-eye left"></div>
+        <div class="ai-eye right"></div>
+        <div class="ai-mouth"></div>
+      </div>
+    </div>
+    <div class="ai-message">
+      <p>Hello! I'm your AI guide. Check out the front-end projects for web development examples!</p>
+      <div class="ai-actions">
+        <button class="ai-action" data-action="frontend">Show Front-End</button>
+        <button class="ai-action" data-action="about">About Me</button>
+        <button class="ai-action" data-action="close">Close</button>
+      </div>
+    </div>
+  </div>
+
   <!-- Footer -->
   <footer>
-    <p>© 2025 A.O | All rights reserved</p>
+    <p>© 2025 Abimbola Oluwamodupe | Creative Technologist & Marketing Developer</p>
     <div class="social-links-footer">
-      <a href="https://twitter.com/planetolu" target="_blank" aria-label="Twitter"><img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="Twitter" width="30" height="30"></a>
-      <a href="https://linkedin.com/in/" target="_blank" aria-label="LinkedIn"><img src="https://cdn-icons-png.flaticon.com/512/733/733561.png" alt="LinkedIn" width="30" height="30"></a>
-      <a href="https://github.com/planetolu" target="_blank" aria-label="GitHub"><img src="https://cdn-icons-png.flaticon.com/512/733/733553.png" alt="GitHub" width="30" height="30"></a>
+      <a href="https://twitter.com/planetolu" target="_blank" aria-label="Twitter">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a href="https://linkedin.com/in/" target="_blank" aria-label="LinkedIn">
+        <i class="fab fa-linkedin-in"></i>
+      </a>
+      <a href="https://github.com/planetolu" target="_blank" aria-label="GitHub">
+        <i class="fab fa-github"></i>
+      </a>
     </div>
   </footer>
 
   <script src="script.js"></script>
+  <script src="ai-assistant.js"></script>
 </body>
 </html>
-
